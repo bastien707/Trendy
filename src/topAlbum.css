@@ -1,0 +1,49 @@
+.album-container{
+    border-style: dashed;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto; /* center the div */
+}
+body {
+    border-style: dashed;
+     margin: 0%;
+     padding-top: 0px;
+  }
+
+.desc{
+    text-align: center;
+}
+
+.responsive{
+    margin: 5px;
+    border-style: dashed;
+}
+
+section{
+    display: grid;
+}
+
+.s1{
+    background-color: rgb(56, 56, 56);
+}
+
+.s2{
+    background-color: rgba(34, 34, 34, 0.541);
+}
+
+/*responsive*/
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
