@@ -1,43 +1,115 @@
-.album-container{
-    border-style: dashed;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin: 0%; /*fullscreen section*/
+    background-color: black;
+  }
+
+.album-container {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 50%;
-    margin: 0 auto; /* center the div */
 }
-body {
-    border-style: dashed;
-     margin: 0%;
-     padding-top: 0px;
-  }
 
+img{
+    border-radius: 5%;
+}
+
+/*album's name*/
 .desc{
+    color: white;
     text-align: center;
 }
 
+/*desc for odd sections*/
+.desc-odd{
+    max-width: 600px;
+    padding: 0px 15px 0px 15px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.h1-odd{
+    text-align: right;
+    font-size: 64px;
+    color: aliceblue;
+}
+
+.p-odd{
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.desc-even{
+    max-width: 600px;
+    padding: 0px 15px 0px 15px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.h1-even{
+    text-align: left;
+    font-size: 64px;
+    color: aliceblue;
+}
+
+.p-even{
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+hr{
+    display: block;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-width: 5px;
+    width: 50%;
+    border-radius: 20px;
+}
+
 .responsive{
-    margin: 5px;
-    border-style: dashed;
+    margin: 3px;
 }
 
+/*sections identities*/
 section{
-    display: grid;
+    padding: 5% 0% 5% 0%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.s1{
-    background-color: rgb(56, 56, 56);
+.s1{ 
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(51,47,101,1) 56%, rgb(201, 23, 255) 100%);
 }
 
 .s2{
-    background-color: rgba(34, 34, 34, 0.541);
+    flex-direction: row-reverse;
+    background: rgb(38,26,173);
+    background: linear-gradient(0deg, rgba(38,26,173,1) 0%, rgba(51,47,101,1) 56%, rgba(0,0,0,1) 100%);
+}
+
+.s3{
+    background: rgb(38,26,173);
+    background: linear-gradient(0deg,  rgba(0,0,0,1) 0%, rgba(51,47,101,1) 56%, rgba(38,26,173,1) 100%);
 }
 
 /*responsive*/
 @media only screen and (max-width: 700px) {
     .responsive {
-      width: 49.99999%;
+      width: 50%;
       margin: 6px 0;
     }
   }
