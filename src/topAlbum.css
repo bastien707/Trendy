@@ -14,8 +14,10 @@ body {
     flex-wrap: wrap;
     width: 50%;
     padding: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     border-radius: 20px;
-    background: linear-gradient(rgba(90, 90, 90, 0.24),rgba(90, 90, 90, 0.2));
+    background: linear-gradient(rgba(90, 90, 90, 0.2),rgba(90, 90, 90, 0.2));
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -24,7 +26,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     border-left: #ccc;
-}
+}   
 
 img{
     border-radius: 5%;
@@ -36,7 +38,6 @@ img{
     text-align: center;
 }
 
-/*desc for odd sections*/
 .desc-odd{
     max-width: 600px;
     padding: 0px 15px 0px 15px;
@@ -79,7 +80,6 @@ img{
 .p-even{
     text-align: left;
     font-size: 32px;
-    font-weight: bold;
     color: aliceblue;
 }
 
@@ -174,15 +174,70 @@ section{
 }
 
 /*responsive*/
-@media only screen and (max-width: 700px) {
-    .responsive {
-      width: 50%;
-      margin: 6px 0;
+
+@media (max-width: 1150px) {
+    section{
+        display: grid;
+        justify-content: space-around;
+        z-index: 0;
+        width: auto;
+    }
+
+
+    .album-container{
+        display: grid;
+        width: 55%;
+        margin: 5% 20% 5% 20%;
+    }
+
+    .desc-odd{
+        padding: 0px 15px 0px 15px;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .h1-even, .h1-odd{
+        text-align: center;
+        font-size: 56px;
+    }
+    
+    .p-even, .p-odd{
+        text-align: center;
     }
   }
-  
-@media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
+
+@media (max-width: 740px) {
+    section{
+        display: grid;
+        justify-content: space-around;
+        z-index: 0;
+        width: auto;
+    }
+
+    .album-container{
+        display: grid;
+        width: 55%;
+        margin: 5% 20% 5% 20%;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+    }
+
+    .desc-odd, .desc-even{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .h1-even, .h1-odd{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .p-even, .p-odd{
+        text-align: center;
+        font-size: 20px;
     }
   }
+
+ 
+
+
