@@ -17,13 +17,13 @@
 
 #nav_list li{
     display: table-cell;
-    width: fit-content;
-    padding-inline-start: 50px;
-    transition: 1s;
+    width: 200px;
+    padding-inline-start: 70px;
+    transition: 0s;
 }
 
 #nav_list li:hover{
-    width: 300px;
+    width: 400px;
     transition: 1s;
 }   
 
