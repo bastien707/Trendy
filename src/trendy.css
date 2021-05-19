@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "scroll.css";
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -18,6 +23,10 @@ section{
 
 #s2{
     background: linear-gradient(210deg,#2ac0c0, #2c2c2c);
+}
+
+#s3{
+    background: linear-gradient(210deg,#2c2c2c, #eee064);
 }
 
 /*gradient title*/
@@ -54,7 +63,7 @@ section{
 .color-word{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     font-weight: bold;
-    color: black;
+    color: #2838ec;
 }
 
 h1{
@@ -74,7 +83,7 @@ p.scroll{
 
 /*--section 2--*/
 
-#s2 #div-odd, #div-even{
+#s2 #div-odd, #div-even, #s3 #div-odd, #div-even{
     margin-top: 5%;
     padding: 2%;
     align-self: flex-start; /*only this div is on the left*/
@@ -82,7 +91,7 @@ p.scroll{
     border-radius: 20px;
 }
 
-#s2 #div-even{
+#s2 #div-even, #s3 #div-even{
     align-self: flex-end;
 }
 
