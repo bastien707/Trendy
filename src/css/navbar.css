@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-body{
-    margin: 0%;
-}
-
 #navbar{
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(90, 90, 90, 0.7));
     overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(90, 90, 90, 0.7));
     height: 55px;
     position: fixed;
     top: 0;
@@ -18,7 +14,7 @@ body{
     padding-top: 5px;
 }
 
-#nav_list{
+.nav_list{
     font-family: 'Poppins', sans-serif;
     display: table;
 	margin-right : auto;
@@ -26,18 +22,18 @@ body{
     margin-top: 0px;
 }
 
-#nav_list li{
+.nav_list li{
     display: table-cell;
     width: 200px;
     transition: 0.5s;
 }
 
-#nav_list li:hover{
+.nav_list li:hover{
     width: 300px;
     transition: 1s;
 }   
 
-#nav_list a{
+.nav_list a{
     display: block;
 	line-height: 50px;
     text-align: center;
@@ -46,7 +42,7 @@ body{
 	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
-#nav_list a:hover{
+.nav_list a:hover{
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -65,6 +61,3 @@ hr{
     height: 175px;
     background-color: black;
 }
-
-
-
