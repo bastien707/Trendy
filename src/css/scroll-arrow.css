@@ -1,0 +1,47 @@
+.scroll-down{
+    height: 88px;
+    width: 52px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    left: 48%;
+    border-radius: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.scroll-down::before,
+.scroll-down::after{
+    content :'';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10%;
+    transform: translate(-50%, -90%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    height: 15px;
+    width: 15px;
+    animation: scroll-down 3s ease infinite;
+}
+
+.scroll-down::after{
+    top: 20px;
+    animation-delay: .5s;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
