@@ -18,6 +18,7 @@ section{
     align-items: center;
 }
 #s1{
+    height: 100vh;
     background: linear-gradient(150deg,#e69898, #2838ec);
 }
 
@@ -39,11 +40,11 @@ section{
 }
 
 #title{
+    font-size: 2.5vw; /*adaptative font-size with vertical width*/
     text-align: center;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    font-size: 32px;
     color: rgb(255, 255, 255);
     padding: 20px;
     margin-left: 2.5%;
@@ -60,6 +61,7 @@ section{
     z-index: 0 ;
 }
 
+/*-- highlight word --*/
 .color-word{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     font-weight: bold;
@@ -72,9 +74,9 @@ h1{
     color: rgb(255, 255, 255);
 }
 
-/*--section 2--*/
+/*-- center box --*/
 
-#s2 #div-odd, #div-even, #s3 #div-odd, #div-even{
+.div-odd, .div-even{
     margin-top: 5%;
     padding: 2%;
     align-self: flex-start; /*only this div is on the left*/
@@ -82,7 +84,7 @@ h1{
     border-radius: 20px;
 }
 
-#s2 #div-even, #s3 #div-even{
+.div-even{
     align-self: flex-end;
 }
 
@@ -90,8 +92,17 @@ h1{
     display: flex;
 }
 
-@media (max-width: 740px) {
-    #div-even, #div-odd{
+@media (max-width: 910px) {
+    .align-img-txt{
         flex-direction: column;
     }
+
+    .align-img-txt img{
+        align-self: center;
+    }
+
+    .div-even p, .div-odd p{
+        text-align: center;
+    }
+
   }
