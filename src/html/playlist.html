@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" href="../css/playlist.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="shortcut icon" href="../img/trendy.png" />
+        <title>Trendy | My playlist</title>
+    </head>
+    
+    <body>
+    <nav id="navbar">
+        <ul id="nav_list">
+            <li><a href="trendy.html">Homepage</a></li>
+            <li><a href="topAlbum.html">Top Album</a></li>
+            <li><a href="topAlbum.html">Top 30 music</a></li>
+            <li><a href="playlist.html">My playlist</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <h1>Create your playlist</h1>
+            <p>This is a paragraph.</p>
+        </div>
+    </section>
+
+    <section id="sec-form">
+        <div id="form">
+            <h3>Fill out this form to add music</h3>
+            <form method="POST">
+                <input class="coord" type="text" id="title" placeholder="Title" required="required">
+                <input class="coord" type="text" id="artist" placeholder="Artist" required="required">
+                <input class="coord" type="text" id="album" placeholder="Album" required="required">
+                <br>
+                <input type="button" id="Add" value="Add to your playlist">
+                <input type="reset" id="reset" value="Reset">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div id="table">
+            <h3>Your playlist !</h3>
+            <table id="playlist">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Album</th>
+                    </tr>
+                </thead>
+                <tbody id="playlist_body"></tbody>
+            </table>
+
+            <button class="btn" onclick="firstpage()">|<</button>
+            <button class="btn" onclick="previouspage()"><</button>
+            <span id="page"></span>
+            <button class="btn" onclick="nextpage()">></button>
+            <button class="btn" onclick="lastpage()">>|</button>
+        </div>
+    </section>
+
+    <script src="playlist.js"></script>
+    </body>
+
+    <footer>
+        <div id="footer-links">
+            <ul id="nav_list">
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="topAlbum.html">Privacy</a></li>
+                <li><a href="https://www.spotify.com/">Stream now</a></li>
+                <li><a href="topAlbum.html">Support</a></li>
+            </ul>
+            <br>
+            <hr>
+        </div>
+    </footer>
+
+</html>
