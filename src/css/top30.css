@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "scroll-arrow.css";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+
+section{
+    padding: 0% 5% 0% 5%;
+    display: flex;
+    background-color: rgb(65, 65, 65);
+    flex-flow: column;
+    align-items: center;
+}
+
+iframe{
+    border-radius: 15px;
+}
+
+#s1{
+    background: linear-gradient(150deg,#413847, #16121b);
+}
+
+#title{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 72px;
+    color: rgb(255, 255, 255);
+}
+
+.song, #info{
+    display: flex;
+    flex-direction: row;
+    margin: 1% 1% 1% 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#info{
+    background: linear-gradient(150deg,#886f99, #bdb5c4);
+    color: rgb(20, 20, 20);
+}
