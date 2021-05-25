@@ -19,14 +19,13 @@
             <li><a href="playlist.html">My playlist</a></li>
         </ul>
     </nav>
-    <section>
+    <section id="sec-form">
         <div>
             <h1>Create your playlist</h1>
-            <p>This is a paragraph.</p>
+            <hr>
+            <p id="form-text">This is a paragraph.</p>
         </div>
-    </section>
 
-    <section id="sec-form">
         <div id="form">
             <h3>Fill out this form to add music</h3>
             <form method="POST">
@@ -34,10 +33,11 @@
                 <input class="coord" type="text" id="artist" placeholder="Artist" required="required">
                 <input class="coord" type="text" id="album" placeholder="Album" required="required">
                 <br>
-                <input type="button" id="Add" value="Add to your playlist">
+                <input type="button" id="Add" value="Add">
                 <input type="reset" id="reset" value="Reset">
             </form>
         </div>
+
     </section>
 
     <section>
