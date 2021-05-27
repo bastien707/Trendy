@@ -41,6 +41,7 @@ iframe:hover{
 }
 
 .song, #info{
+    max-height: 80px; /*max height 80px not to display hidden content*/
     margin: 1% 1% 1% 1%;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.2);
@@ -52,22 +53,29 @@ iframe:hover{
 }
 
 .song:hover{
-    padding-bottom: 20px;
-    transition: 0.5s;
+    background: linear-gradient(-150deg,#f06198, #f3f173);
+    max-height: 1000px; /*fit any content until 1000px*/
+    transition: max-height 0.5s ease-in; /*smooth display*/
 }
 
 .song:hover .hidden-info{
-    display: flex;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    transition-delay: 0.25s; 
+}
+
+.hidden-info{
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
 }
 
 .row-div{
     display: flex;
     justify-content: space-between;
-}
-
-.hidden-info{
-    display: none;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p{
