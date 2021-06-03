@@ -21,10 +21,10 @@
     </nav>
     <section id="sec-form">
         <div>
-            <h1>Create your playlist</h1>
+            <h1>Create your <span id="word-color">playlist</span></h1>
             <hr>
-            <p id="form-text">On this page, you can create your own playlist and modify it as you want. <br>
-            To fill your playlist, you must complete this form right here ! </p>
+            <p id="form-text">On this page, you can <span id="word-color">create</span> your own playlist and <span id="word-color">modify</span> it as you want. <br>
+            To fill your playlist, you must complete this <span id="word-color">form</span> right here ! </p>
         </div>
 
         <div id="form">
@@ -38,12 +38,14 @@
                 <input type="reset" id="reset" value="Reset">
             </form>
         </div>
-
+        <a href="#sec-table">
+            <div class="scroll-down"></div>
+        </a>
     </section>
 
-    <section>
+    <section id="sec-table">
         <div id="table">
-            <h3>Your playlist !</h3>
+            <h3 style="color: black;">Your playlist !</h3>
             <table id="playlist">
                 <thead>
                     <tr>
@@ -54,12 +56,6 @@
                 </thead>
                 <tbody id="playlist_body"></tbody>
             </table>
-
-            <button class="btn" onclick="firstpage()">|<</button>
-            <button class="btn" onclick="previouspage()"><</button>
-            <span id="page"></span>
-            <button class="btn" onclick="nextpage()">></button>
-            <button class="btn" onclick="lastpage()">>|</button>
         </div>
     </section>
 
