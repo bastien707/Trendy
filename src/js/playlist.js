@@ -5,7 +5,7 @@ const reset = document.querySelector('#reset');
 //const table = document.querySelector('table');
 
 addbutton.onclick = function(){
-    //alert("Done");
+    alert("Done");
 
     //we take value of field of the form
     let Title = document.querySelector('#title').value;
