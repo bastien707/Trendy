@@ -1,1 +1,2 @@
-# Trendy
+# Trendy Web Project
+Music trends ! 

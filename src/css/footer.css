@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+footer {
+  background-color: rgb(0, 0, 0);
+}
+
+#foote-links {
+  width: 100%;
+  overflow: hidden;
+  height: 55px;
+}
+
+#footer {
+  font-family: "Poppins", sans-serif;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+#footer li {
+  display: table-cell;
+  width: 150px;
+}
+
+#footer a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#footer a:hover {
+  color: rgb(145, 145, 145);
+}
+
+/* effect-shine just for fun*/
+#footer .effect-shine:hover {
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  from {
+    color: crimson;
+  }
+  30% {
+    color: rgb(69, 248, 25);
+  }
+  50% {
+    color: rgb(20, 200, 206);
+  }
+  70% {
+    color: blueviolet;
+  }
+  to {
+    color: crimson;
+  }
+}
+
+@media (max-width: 910px) {
+  #footer li {
+    display: grid;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/playlist.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="shortcut icon" href="../../img/trendyimg.png" />
+        <title>Trendy | My playlist</title>
+    </head>
+    
+    <body>
+    <nav id="navbar">
+        <ul class="nav_list">
+            <li><a href="trendy.html">Homepage</a></li>
+            <li><a href="topAlbum.html">Top Album</a></li>
+            <li><a href="top20.html">Top 20 music</a></li>
+            <li><a href="playlist.html">My playlist</a></li>
+        </ul>
+    </nav>
+    <section id="sec-form">
+        <h1>Create your <span id="word-color">playlist</span></h1>
+        <hr>
+        <div>
+            <p id="form-text">On this page, you can <span id="word-color">create</span> your own playlist and <span id="word-color">modify</span> it as you want. <br>
+            To fill your playlist, you must complete this <span id="word-color">form</span> right here ! </p>
+        </div>
+
+        <div id="form">
+            <h3>Fill out this form to add music</h3>
+            <form method="POST">
+                <input class="coord" type="text" id="title" placeholder="Title" required="required">
+                <input class="coord" type="text" id="artist" placeholder="Artist" required="required">
+                <input class="coord" type="text" id="album" placeholder="Album" required="required">
+                <br>
+                <input type="button" id="Add" value="Add">
+                <input type="reset" id="reset" value="Reset">
+            </form>
+        </div>
+        <a href="#sec-table">
+            <div class="scroll-down"></div>
+        </a>
+    </section>
+
+    <section id="sec-table">
+        <div id="table">
+            <h3 style="color: black;">Your playlist !</h3>
+            <table id="playlist">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Album</th>
+                    </tr>
+                </thead>
+                <tbody id="playlist_body"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../js/playlist.js"></script>
+
+    <footer>
+        <div id="footer-links">
+            <ul id=footer>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Privacy">Privacy</a></li>
+                <li><a href="https://www.spotify.com/">Stream now</a></li>
+                <li><a class="effect-shine" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Support</a></li>
+            </ul>
+            <br>
+        </div>
+    </footer>
+
+    </body>
+
+    
+
+</html>

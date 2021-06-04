@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  background-color: rgb(33, 40, 53);
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 72px;
+}
+
+h2 {
+  color: aliceblue;
+  transition: 1s;
+}
+
+#git {
+  margin-bottom: 10%;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: #4339cfc9;
+  line-height: 50px;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  border-top: 1px solid #eeeeee;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+#git:hover {
+  background-color: rgba(45, 38, 143, 0.788);
+  border-top: 1px solid #a8a8a8;
+  transition: 0.5s;
+}
+
+#profiles {
+  margin: 5%;
+  width: 95%;
+  display: flex;
+}
+
+.card {
+  margin: 4%;
+  padding: 2.5%;
+  width: fit-content;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  transition: 1s;
+}
+
+.card:hover {
+  box-shadow: 20px 20px 40px #4339cf;
+  border-top: 2px solid #7c74e9;
+  border-left: 2px solid #7c74e9;
+  transform: scale(1.1); /*zoom card when hover*/
+  transition: 0.5s;
+}
+
+.card:hover h2 {
+  transform: scale(1.2) translate(20px);
+  color: #7c74e9;
+  transition: 0.5s;
+}
+
+.card:hover h1 {
+  font-size: 50px;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1285px) {
+  .card:hover h2 {
+    transform: scale(1.1) translate(10px);
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    margin-top: 10%;
+  }
+
+  #profiles {
+    display: block;
+    width: 50%;
+  }
+
+  .card {
+    margin: auto;
+    min-width: fit-content;
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+}
