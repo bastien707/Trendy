@@ -79,10 +79,6 @@ h2 {
   transition: 0.5s;
 }
 
-.card:hover h1 {
-  font-size: 50px;
-}
-
 img {
   height: 30px;
   width: 30px;
